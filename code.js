@@ -48,7 +48,7 @@ form.addEventListener(("submit"), (e)=>{
         console.log("email is valid");
         window.localStorage.setItem("email",email.value);
         e.preventDefault();
-      window.location.href = "success.html"
+      window.location.href = "./success.html"
     }
 })
 
