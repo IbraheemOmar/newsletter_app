@@ -220,7 +220,7 @@ button:hover{
 
 
 
-    @media (width <500px){
+    @media (width <600px){
         html{
         }
         body{
@@ -398,7 +398,7 @@ button:hover{
 
  
 
-@media (width>499px) and (width<700px)   {
+@media (width>599px) and (width<700px)   {
 
   
    
