@@ -161,64 +161,8 @@ button:hover{
 
 
 }
-
+}
     
-
-.success{
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    width: 420px;
-    padding: 30px 0px;
-    
-}
-.success-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 80%;
-
-}
-
-
-}
-.success svg{
-    height: 55px;
-    width: 55px;
-    margin-bottom: 25px;
-
-}
-.success h1{
-    font-size: 300%;
-    margin-bottom: 20px;
-    line-height: 47px;
-}
-
-.success p{
-    font-size: 14px;
-    margin-bottom: 35px;
-    width: 100%;
-}
-
-.success button{
-    width: 100%;
-    border-radius: 5px;
-    padding: 15px;
-    background-color: hsl(234, 29%, 20%);
-    color:  hsl(0, 0%, 100%);
-    font-weight: 600;
-    border: none;
-    font-size: 14px;
-
-    margin-bottom: 20px;
-}
-
-
-
 
     @media (width <500px){
         html{
@@ -353,41 +297,6 @@ button:hover{
 
 
 
-            .success{
-                display: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-            }
-            .success .success-container{
-                height: 100%;
-            display: flex;
-                flex-direction: column;
-                align-items: start;
-                justify-content: end;
-                
-                padding: 0% 5% 5% 5%;
-            }
-            
-            .success svg{
-                height: 60px;
-                width: 60px;
-                margin-bottom: 40px;
-            }
-            .success h1{
-                font-size: 250%;
-                line-height: 40px;
-        }
-        .success p{
-            font-size: 100%;
-            line-height: 20px;
-        }
-        .success button{
-            margin-top: 170px;
-            padding:7%;
-            border-radius: 10px;
-        }
 }
 
 
