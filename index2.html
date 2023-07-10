@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Newsletter | sign-up form with success message</title>
+
+</head>
+<body>
+    <main>
+        <div class="container" id="container">
+            <div class="right">
+                <picture>
+                    <source srcset="/assets/images/illustration-sign-up-desktop.svg"
+                    media="(min-width:601px)"
+                    />
+                    <img
+                    src="/assets/images/illustration-sign-up-mobile.svg"
+                    alt="mobile image"
+                    width="100%"
+                     height="100%" 
+                    />
+                </picture>
+            </div>
+
+            <div class="left">
+
+                <div class="left-container">
+                  <h1>Stay updated!</h1> 
+                
+                
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                
+                <ul>
+                  
+                  <li> 
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                  </li>
+                
+                <li>
+                    <img src="assets/images/icon-list.svg" alt="list-icon">
+                  <p>Measuring to ensure updates are a success</p>
+                </li>
+                
+                <li>
+                    <img src="assets/images/icon-list.svg" alt="list-icon">
+                  <p>And much more!</p>
+                </li>
+                
+              </ul>
+
+              <form id="form" novalidate>
+                <div class="word-stuff">
+                  <label for="email">Email address</label>
+                  <div id="error">Valid email required</div>
+                 </div>
+                  
+             
+             
+             
+                 <input id="email" type="email" placeholder="email@company.com">
+                 <button  type="submit" class="submit" placeholder=>Subscribe to monthly newsletter</button> 
+               </form>
+               
+               
+               <!-- Subscribe to monthly newsletter -->
+             
+               </div>
+               </div>
+
+        </div>
+    </main>
+</body>
+<script src="code.js"></script>
+</html>

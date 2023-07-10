@@ -4,7 +4,7 @@ let dismiss = document.getElementById("dismiss");
 
 dismiss.onclick = ()=>{
 
-    window.location.href = "index.html";
+    window.location.href = "index2.html";
 }
 
 let sentTo = document.getElementById("sent-to");

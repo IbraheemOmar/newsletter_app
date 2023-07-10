@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+svg{
+    display: block;
+    max-width: 100%;
+}
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -23,24 +29,29 @@ body{
 .container{
     background-color: white;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     border-radius: 30px;
     max-height: 500px;
     /* height: 63%; */
-    max-width: 800px;
+    max-width: 750px;
 }
 
 .right{
-    height: max-content;
-}
-.right .mobile-svg {
-/* position: absolute; */
-}
-.right .desktop-svg{
-    width: 100%;
+    padding: 0;
     height: 100%;
-    padding: 15px 15px 15px 0;
+}
+.right picture source{
+    height: 100%;
+    width: 100%;
+}
+
+.right img{
+    max-width: 100%;
+        height: 100%;
+    padding: 20px;
+    /* padding: 15px 15px 15px 0; */
     
 }
 
@@ -52,12 +63,13 @@ body{
     
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 20px 20px;
+    /* padding: 20px 20px 20px 20px; */
 
 }
 .left-container{
     max-height: 100%;
     transform: scale(90%);
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +102,7 @@ body{
 .left ul li p{
     margin-bottom: 0;
 }
-.left ul li svg{
+.left ul li img{
     margin-right: 15px;
 }
 
@@ -220,8 +232,10 @@ button:hover{
 
 
 
-    @media (width < 600px){
-        html{
+    @media (max-width: 600px){
+        *{
+            padding: 0;
+            margin: 0;
         }
         body{ 
             /* background:white; */
@@ -230,34 +244,41 @@ button:hover{
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: white;
 
         }
             .container{
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 height: 100vh;
-                width: 100%;
+                width: 100vw;
+
                 align-items: center;
                 max-height: 100%;
                 border-radius: 0;
             }
             
             .right{
-                display: flex;
-                justify-content: flex-start;
-            }
-            .right svg{
-                
-                height: 100%;
+                border: 2px red solid;
+                height: fit-content;
                 width: 100%;
+                /* height: 50%; */
+                display: flex;
+                align-items: flex-start;
+            }
+            .right picture{
+                width: 100%;
+                
+            }
+            .right img{
+                width: 100%;
+                padding: 0;
             }
 
             .left{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                
-                height: 70%;
                 
             }
             .left .left-container{
@@ -296,7 +317,7 @@ button:hover{
                 
                 
             }
-            .left ul li svg{
+            .left ul li img{
 
                 min-height: 25px;
                 min-width: 25px;

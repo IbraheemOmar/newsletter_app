@@ -9,7 +9,7 @@
 
 }
 
-@media (width > 499px) {
+@media (min-width: 499px) {
     body{
         display: flex;
         flex-direction: column;
@@ -38,8 +38,16 @@
     width: 80%;
     
 }
-button:hover{
-background-color: orange;
+#dismiss:hover{
+    background: linear-gradient(
+        90deg,
+        hsl(345, 96%, 64%), hsl(4, 100%, 67%)
+    );
+    transition: .5s all;
+    cursor: pointer;
+
+    box-shadow: 0 10px 50px -10px hsl(4, 100%, 67%)
+   
 }
 
 }}
@@ -80,7 +88,7 @@ background-color: orange;
 
 
 
-@media (width <500px){
+@media (max-width:500px){
 .success{
     display: none;
     display: flex;
